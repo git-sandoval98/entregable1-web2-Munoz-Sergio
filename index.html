@@ -1,18 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web2_Munoz_Sergio</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sitio web de Sergio Andrés Muñoz Sandoval</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
 
-    <h1>Bienvenido a mi sitio web</h1>
-    <p>Este es un párrafo de ejemplo en español.</p>
+    <header class="site-header">
+        <div class="container nav" role="navigation" aria-label="Principal">
+            <div class="brand">
+                <div class="brand__logo" aria-hidden="true">SM</div>
+                <span>Sitio web de Sergio Andrés Muñoz Sandoval</span>
+            </div>
+            <button class="menu-toggle" id="btnMenu" aria-controls="menu" aria-expanded="false">Menú</button>
+            <nav id="menu" class="menu" aria-expanded="false">
+                <a href="#about">Sobre mí</a>
+                <a href="#hobbies">Pasatiempos</a>
+                <a href="#estudios">Carrera</a>
+                <a href="#libro">Libro</a>
+                <a href="#video">Video</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
+    <main id="contenido" class="container grid-layout">
+        <aside class="sticky">
+            <section class="card about" id="about">
+                <div class="card__body">
+                    <div class="perfil">
+                        <figure>
+                            <img id="mi-foto" src="img/mifoto.png" />
+                        </figure>
+                        <div>
+                            <h1 class="page-title">Sergio Andrés Muñoz Sandoval</h1>
+                            <p class="lead">Estudiante de Ingeniería de Sistemas</p>
+                        </div>
+                    </div>
+                    <hr class="sep" />
+                    <dl class="datos">
+                        <div>
+                            <dt>Edad</dt>
+                            <dd>27</dd>
+                        </div>
+                        <div>
+                            <dt>Ciudad</dt>
+                            <dd>Isnos Huila, Colombia</dd>
+                        </div>
+                        <div>
+                            <dt>Correo</dt>
+                            <dd><a href="mailto:sergioa.munoz@udla.edu.co">sergioa.munoz@udla.edu.co</a></dd>
+                        </div>
+                        <div>
+                            <dt>Teléfono</dt>
+                            <dd><a href="tel:+573125552536">+57 312 555 2536</a></dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+        </aside>
+
+        <div>
+            <section class="card hobbies" id="hobbies">
+                <header class="card__body">
+                    <h2>Pasatiempos</h2>
+                    <p class="lead">Esto es lo que más disfruto en mis tiempos libres.</p>
+                </header>
+                <div class="card__body hobbies__grid">
+                    <div class="chip">Videojuegos de construcción de aldeas (Age of Empire, Age of Mithology, Clash of
+                        Clans)</div>
+                    <div class="chip">Estudiar programación para mi carrera universitaria</div>
+                    <div class="chip">Leer Berserk</div>
+
+                </div>
+            </section>
+
+
+            <section class="card estudios" id="estudios">
+                <div class="card__body">
+                    <h2>Mi carrera universitaria</h2>
+                    <p class="lead">
+                        Soy estudiante de Ingeniería de sistemas de la Universidad de la Amazonia ubicada en Florencia,
+                        Caquetá.
+                        Tengo clase todos los días intercalando materias en la sede Porvenir y en la sede Centro.
+                        Este sitio web es creado para la materia Programación Web.
+                    </p>
+                </div>
+
+                <div class="card__body">
+                    <figure class="uni-media">
+                        <img src="img/uniamazonia.jpg" alt="Universidad de la Amazonia — campus en Florencia, Caquetá"
+                            loading="lazy" />
+
+                    </figure>
+                </div>
+            </section>
+
+            <section class="card libro" id="libro">
+                <div class="card__body">
+                    <h2>Lo que mas leo</h2>
+                    <p class="lead"><em>Berserk</em> — Kentaro Miura.</p>
+                    <p>
+                        Es un manga que hace poco he empezado a leer despues de haberme visto el anime, el estilo del
+                        manga es épico fantástico y de fantasía oscura.
+                    </p>
+                </div>
+
+                <div class="card__body">
+                    <figure class="book-media">
+                        <img src="img/berserk.jpg" alt="Guts" loading="lazy" />
+                    </figure>
+                </div>
+            </section>
+
+
+
+            <section class="card video" id="video">
+                <div class="card__body">
+                    <h2>Juego actualmente favorito</h2>
+                    <p class="lead">Stardew Valley lo juego mientras está lista la comida y en las noches libres.</p>
+                </div>
+                <div class="card__body">
+                    <iframe class="video__frame" src="https://www.youtube.com/embed/ot7uXNQskhs?si=cinGj8ntBoOP484s"
+                        title="Lo que estoy jugando actualmente"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="card contacto" id="contacto">
+                <div class="card__body">
+                    <h2>Contacto</h2>
+                    <p class="lead">Mirame en Instagram.</p>
+                    <div class="cta">
+                        <a class="btn btn--primary" href="https://instagram.com/sandoval.zip" target="_blank"
+                            rel="noopener noreferrer" aria-label="Abrir mi perfil de Instagram">📸 @Sandoval.zip</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© 2025 Sergio Andrés Muñoz Sandoval - UDLA</div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('btnMenu');
+        const menu = document.getElementById('menu');
+        btn?.addEventListener('click', () => {
+            const open = menu.getAttribute('aria-expanded') === 'true';
+            menu.setAttribute('aria-expanded', String(!open));
+            btn.setAttribute('aria-expanded', String(!open));
+        });
+    </script>
 </body>
 
 </html>
