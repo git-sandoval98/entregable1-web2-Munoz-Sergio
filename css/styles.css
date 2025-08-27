@@ -296,7 +296,7 @@ h2{
 }
 
 
-@media (min-width: 479px) and (max-width: 1023px){
+@media (min-width: 480px) and (max-width: 1023px){
 
   .menu-toggle{ 
     display:none 
@@ -315,20 +315,32 @@ h2{
     background:transparent 
 }
 
-  .about{ 
-    grid-template-columns: 1fr 2fr; 
+  /* .about{ 
+   
+} */
+
+ .about .card__body { 
+    padding-inline: 32px; 
+     grid-template-columns: 1fr 2fr; 
     align-items:center 
 }
-
+/* 
   .perfil{ 
     grid-template-columns: auto 1fr; 
     align-items:center 
-}
+} */
+   .perfil {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* ancho claro para la foto */
+    align-items: center;
+    column-gap: 24px;
+  }
 
-  .perfil img{ 
+  /* .perfil img{ 
     width: 190px; 
     height:190px 
-}
+} */
+  .perfil img { width: 200px; height: 200px; margin: 0; }
 }
 
 
