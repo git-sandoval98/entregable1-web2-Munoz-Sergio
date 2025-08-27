@@ -273,20 +273,6 @@ h2{
     text-align:center 
 }
 
-
-.grid-layout{}
-.sticky{}
-
-
-.skip{ 
-    position:absolute; 
-    left:-999px; 
-    top:auto; 
-    width:1px; 
-    height:1px; 
-    overflow:hidden 
-}
-
 .skip:focus{ 
     position:static; 
     width:auto; 
