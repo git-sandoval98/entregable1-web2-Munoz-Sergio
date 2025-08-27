@@ -327,8 +327,8 @@ h2{
 
  .about .card__body { 
     padding-inline: 32px; 
-     grid-template-columns: 1fr 2fr; 
-    align-items:center 
+     /* grid-template-columns: 1fr 2fr; 
+    align-items:center  */
 }
 /* 
   .perfil{ 
@@ -337,7 +337,7 @@ h2{
 } */
    .perfil {
     display: grid;
-    grid-template-columns: 200px 1fr; /* ancho claro para la foto */
+    grid-template-columns: 200px 1fr;
     align-items: center;
     column-gap: 24px;
   }
@@ -349,9 +349,7 @@ h2{
   .perfil img { width: 200px; height: 200px; margin: 0; }
 }
 
-
-
-@media (min-width: 1023px){
+@media (min-width: 1024px){
 
   .grid-layout{ 
     display:grid; 
@@ -378,5 +376,20 @@ h2{
     width: 220px; 
     height:220px 
 }
+
+ .menu-toggle{ 
+    display:none; 
+}
+
+  .menu{ 
+    display:flex; gap:8px; 
+}
+  .menu[aria-expanded="true"] {
+     display:flex; 
+     margin:0; 
+     border:0; 
+     padding:0; 
+     background:transparent 
+    }
 
 }
